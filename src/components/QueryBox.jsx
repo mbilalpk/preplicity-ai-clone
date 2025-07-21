@@ -54,8 +54,8 @@ export default function QueryBox() {
       const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
-          "Authorization": "Bearer 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",
-          "Content-Type": "application/json"
+  "Authorization": `Bearer ${import.meta.env.VITE_OPENROUTER_API_KEY}`,
+  "Content-Type": "application/json"
         },
         body: JSON.stringify({
           model: "openai/gpt-3.5-turbo",
