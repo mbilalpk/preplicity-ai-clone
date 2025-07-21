@@ -10,7 +10,7 @@ import {
 
 import Sidebar from "./components/Sidebar";
 import QueryBox from "./components/QueryBox";
-import Library from "./pages/library";
+import Library from "./pages/Library";
 
 function App() {
   return (
